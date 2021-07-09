@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey</title>
+</head>
+<body>
+  
+  <h1 id="title">iWebDev Survey Form</h1>
+  <p id="description"><i>Any feedback or suggestions are appreciated!</i></p>
+  <form id="survey-form"> 
+    
+    <div class="form-control">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+    </div>
+    
+    <div class="form-control">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+    </div> 
+  
+    <div class="form-control">
+      <label id="number-label" for="number">Age <span>(optional)</span></label>
+      <input type="number" name="number" id="number" placeholder="Age" min="0" max="99" optional>
+    </div>   
+  
+    <div class="form-control">
+      <label for="role">Which option best describes your current role?</label>
+      <select id="dropdown" placeholder="Select current role" required>
+          <option selected="selected" disabled>Select current role</option>
+          <option value="student">Student</option>
+          <option value="ftj">Full-Time Job</option>
+          <option value="ftl">Full-Time Learner</option>
+          <option value="pns">Prefer not to say</option>
+          <option value="student">Other</option>
+      </select>
+      </label>
+    </div>  
+    
+  <div class="form-control">
+     <label for="recommend">Would you recommend iWebDev to a friend?</label>
+    
+        <label for="definitely">
+        <input type="radio" name="recommend" id="definitely" value="definitely">Definitely</label>
+  
+        <label for="maybe">
+        <input type="radio" name="recommend" id="maybe" value="maybe">Maybe</label>
+    
+        <label for="notsure">
+        <input type="radio" name="recommend" id="notsure" value="notsure">Not Sure</label>
+    
+  </div>
+  
+  <div class="form-control">
+    <label for="feature">What is your favorite feature of iWebDev?</label>
+      <select id="dropdown" placeholder="Select an option" required>
+            <option selected="selected" disabled>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="opensource">Open Source</option>
+      </select>
+  </div>
+
+    <div class="form-control">
+        <label for="improve">What would you like to see improved? <span> (Check all that apply)</span></label>
+      
+          <label for="frontend">
+          <input type="checkbox" id="frontend" name="frontend" value="frontend">Front-end Projects</label>
+          
+          <label for="backend">
+          <input type="checkbox" id="backend" name="backend" value="backend">Back-end Projects</label>
+      
+          <label for="datavis">
+          <input type="checkbox" id="datavis" name="datavis" value="datavis">Data Visualization</label>
+ 
+</label>
+
+    </div>
+
+    <div class="form-control">
+            
+<label for="comments"> Any comments or suggestions?</label></br>
+            <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+         
+    </div>
+
+    <div class="form-control">
+
+      <button id="submit" type="submit" value="submit">Submit</button>
+  
+    </div>
+
+ </form>
+</body>
+</html>

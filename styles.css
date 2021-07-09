@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    height: 100%;
+    width: 100%;
+    background: var(--color-darkblue);
+    /* background-image: linear-gradient( 
+      115deg
+      , rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(jsposter.jpg); */
+    background-image: url(frontend.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1, p, label, #submit{
+  color: #FFFFFF;
+  font-family: Poppins, sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+label {
+  font-size: 18px;
+}
+
+/* the survey form styles the form and creates a border for all the label and input elements */
+
+#survey-form {
+  background: #090911cc;
+  max-width: 750px;
+  margin: 20px auto;
+  padding: 40px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* the form control styles the labels and inputs, aligning them to the left of the div and botom margin to space out */
+
+.form-control {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-control input, .form-control select, .form-control textarea {
+  display: block;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 6px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+#comments {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  margin-top: -10px;
+}
+
+.form-control input[type="radio"], .form-control input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+#title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#description {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#submit {
+  background: #23587c;
+  color: #F3F3F3;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+}
